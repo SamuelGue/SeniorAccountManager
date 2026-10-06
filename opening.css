@@ -1668,3 +1668,15 @@ body.has-opening {
 .room-creator-table,#room-creator-table{width:100%}
 @media (max-width:760px){.rhythm-grid{grid-template-columns:1fr}.diagnostic-framework{padding:12px}#room-creator-table{font-size:12px}}
 .rhythm-card ul{list-style:disc}.rhythm-card li{margin-bottom:6px}.rhythm-output span{display:block;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:11px;letter-spacing:.08em;opacity:.7;margin-bottom:4px}.rhythm-chain{word-spacing:.3em}
+
+.rhythm-section{margin:8px 0 28px}
+.rhythm-title{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:clamp(20px,2.4vw,28px);letter-spacing:.04em;margin:6px 0 8px}
+.rhythm-lead{font-family:Georgia,serif;font-style:italic;font-size:15px;margin:0}
+.rhythm-card h3{margin:0;font-size:18px;letter-spacing:.02em}
+.rhythm-steps{margin:0;padding-left:20px;line-height:1.5}.rhythm-steps li{margin-bottom:6px}
+.rhythm-chain-vertical{display:flex;flex-direction:column;align-items:center;gap:6px;word-spacing:0}
+.rhythm-chain-vertical>div{border:2px solid #111;background:#fff;padding:8px 28px;min-width:220px;text-align:center}
+.rhythm-chain-vertical>div span{display:block;font-size:10px;opacity:.7}
+.rhythm-chain-vertical .rhythm-chain-next{background:#111;color:#fff}
+.rhythm-principle{font-family:Georgia,serif;font-style:italic;font-size:clamp(18px,2vw,24px);text-align:center;margin:18px 0}
+.rhythm-bridge{border:2px solid #111;background:#eaf7e6;padding:14px 16px;margin-top:12px}
