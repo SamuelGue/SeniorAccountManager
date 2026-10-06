@@ -1680,3 +1680,22 @@ body.has-opening {
 .rhythm-chain-vertical .rhythm-chain-next{background:#111;color:#fff}
 .rhythm-principle{font-family:Georgia,serif;font-style:italic;font-size:clamp(18px,2vw,24px);text-align:center;margin:18px 0}
 .rhythm-bridge{border:2px solid #111;background:#eaf7e6;padding:14px 16px;margin-top:12px}
+
+.economics-list{display:block}
+.economics-row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 16px;align-items:baseline;padding:10px 0;border-bottom:1px dashed #bbb}
+.economics-row dt{display:flex;flex-direction:column;gap:3px;min-width:0}
+.econ-label{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;font-weight:700;letter-spacing:.06em}
+.econ-formula{font-size:13px;line-height:1.4;opacity:.75}
+.economics-row dd{margin:0;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:18px;font-weight:700;text-align:right;white-space:nowrap}
+.economics-row.economics-total{border-bottom:2px solid #111}
+.priority-section{margin:28px 0}
+.priority-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin:10px 0 22px}
+.priority-frame{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:10px 0 16px}
+.priority-card,.priority-tier{border:2px solid #111;background:#fff;padding:14px;display:flex;flex-direction:column;gap:6px}
+.priority-card:nth-child(1){background:#eaf7e6}.priority-card:nth-child(2){background:#e8f0ff}.priority-card:nth-child(3){background:#fff8d6}.priority-card:nth-child(4){background:#ffe3ef}.priority-card:nth-child(5){background:#f4f4f0}
+.priority-tier:first-child{background:#111;color:#fff}
+.priority-card p,.priority-tier p{margin:0;line-height:1.45;font-size:14px}
+.priority-flow>div small{display:block;font-size:12px;opacity:.75;margin-top:2px}
+.priority-flow>div{min-width:260px}
+@media (max-width:1100px){.priority-grid{grid-template-columns:repeat(2,1fr)}.priority-frame{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:760px){.priority-grid,.priority-frame{grid-template-columns:1fr}.economics-row dd{font-size:16px}.priority-flow>div{min-width:0;width:100%}}

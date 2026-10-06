@@ -62,9 +62,9 @@
     text('a-o-comm', gbp(o.commission));
     text('a-o-amp', gbp(o.amp));
     text('a-o-total', gbp(o.total));
-    text('a-o-cac', cacText(o.cac));
-    text('a-o-ltv', o.ltv == null ? 'n/a' : gbp(o.ltv));
-    text('a-o-ratio', ratioText(o.ratio));
+    text('a-o-cac', o.cac == null ? 'n/a' : '≈ ' + cacText(o.cac));
+    text('a-o-ltv', o.ltv == null ? 'n/a' : '≈ ' + gbp(o.ltv));
+    text('a-o-ratio', o.ratio == null ? 'n/a' : '≈ ' + ratioText(o.ratio));
     text('a-o-rpm', o.impressions ? gbp(o.revenue / o.impressions * 1000) : 'n/a');
     text('a-o-rpc', o.activated ? gbp(o.revenue / o.activated) : 'n/a');
   }
