@@ -1614,3 +1614,57 @@ body.has-opening {
 .final-list { display: flex; flex-wrap: wrap; gap: 10px; margin: 26px 0 38px; padding: 0; list-style: none; font: 600 11px 'JetBrains Mono', monospace; letter-spacing: .04em; }
 .final-list li { border: 2px solid #0f0f0f; background: #fff8e4; padding: 9px 12px; }
 .final-positioning .final-line-quiet { margin-top: 40px; font-size: clamp(20px, 2.4vw, 30px); font-weight: 500; font-style: italic; }
+
+/* ---- Credibility pass: models, diagnostics, rhythm ---- */
+.scale-note,.formula-note,.demo-banner,.room-model-note{border:2px solid #111;background:#fff8d6;padding:12px 16px;margin:14px 0;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;line-height:1.55;letter-spacing:.02em}
+.demo-banner{background:#e8f0ff;margin:0 0 14px}
+.formula-note{background:#f4f4f0}
+.economics-block{border:2px solid #111;background:#fff;padding:16px;margin-top:16px}
+.economics-list{list-style:none;margin:0;padding:0;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:13px}
+.economics-list li{display:flex;justify-content:space-between;gap:12px;padding:6px 0;border-bottom:1px dashed #bbb}
+.economics-list .economics-total{border-bottom:2px solid #111;font-weight:700}
+.diagnostic-framework{border:2px solid #111;background:#fff;padding:20px;margin:28px 0}
+.diag-head{display:flex;flex-wrap:wrap;gap:8px;justify-content:space-between;margin-bottom:12px}
+.diag-chain{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;letter-spacing:.04em;margin:8px 0}
+.diag-table-wrap{overflow-x:auto}
+.diag-table{width:100%;border-collapse:collapse;font-size:14px;line-height:1.5}
+.diag-table th,.diag-table td{border:2px solid #111;padding:10px 12px;text-align:left;vertical-align:top}
+.diag-table th{background:#ffe3ef;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:11px;letter-spacing:.06em}
+.decision-rule-block{border:2px solid #111;background:#eaf7e6;padding:16px;margin-top:16px}
+.starting-bet{border:2px dashed #111;background:#fff8d6;padding:16px;margin-top:16px}
+.scenario-math{margin-top:16px;border:2px solid #111;background:#fff;padding:10px 14px}
+.scenario-math summary{cursor:pointer;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;letter-spacing:.06em}
+.math-table{width:100%;border-collapse:collapse;margin-top:10px;font-size:13px;font-family:ui-monospace,Menlo,Consolas,monospace}
+.math-table th,.math-table td{border-bottom:1px solid #ccc;padding:5px 8px;text-align:right}
+.math-table th:first-child{text-align:left;font-weight:600}
+#s-sens{display:flex;flex-direction:column;gap:8px}
+#s-sens em{font-style:normal;opacity:.75;margin-left:6px}
+.rhythm-intro{max-width:720px}
+.rhythm-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:20px 0}
+.rhythm-card{border:2px solid #111;background:#fff;padding:18px;display:flex;flex-direction:column;gap:10px}
+.rhythm-card:nth-child(1){background:#e8f0ff}.rhythm-card:nth-child(2){background:#ffe3ef}.rhythm-card:nth-child(3){background:#eaf7e6}
+.rhythm-card ul{margin:0;padding-left:18px;line-height:1.5}
+.rhythm-day{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;letter-spacing:.08em;font-weight:700}
+.rhythm-output{border-top:2px solid #111;padding-top:10px;margin-top:auto;font-weight:600}
+.rhythm-chain,.work-chain-key{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;letter-spacing:.06em;margin:12px 0}
+.rhythm-note{border:2px dashed #111;padding:14px;background:#fff8d6;margin:12px 0}
+.loop-flow{display:flex;flex-direction:column;gap:8px;max-width:420px;margin:20px 0}
+.loop-step{border:2px solid #111;background:#fff;padding:12px 16px;text-align:center;position:relative;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:13px}
+.loop-step:not(:last-child)::after{content:"↓";position:absolute;left:50%;bottom:-22px;transform:translateX(-50%);z-index:1}
+.loop-step-next{background:#111;color:#fff}
+.work-chain{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin:24px 0}
+.work-chain>*{border:2px solid #111;background:#fff;padding:12px;font-size:14px;line-height:1.45}
+.room-model-inputs{display:flex;flex-wrap:wrap;gap:16px;margin:8px 0}
+.room-model-inputs label{display:flex;gap:8px;align-items:center}
+.room-model-inputs input{width:90px}
+.room-model-formula{opacity:.8}
+.experiment-calc{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;border:2px solid #111;padding:10px 14px;background:#f4f4f0;margin:10px 0}
+.experiment-verdict,#exp-verdict{border:2px solid #111;background:#fff8d6;padding:12px 14px;margin-top:10px}
+.score-weights{border:2px solid #111;background:#f4f4f0;padding:12px 14px;margin:10px 0;font-size:13px;line-height:1.5}
+.score-weights[hidden]{display:none}
+.score-weights ul{margin:6px 0 10px;padding-left:18px}.score-weights li b{display:block}
+.score-total{border-top:2px solid #111;padding-top:8px}
+.fee-math{margin-top:12px}
+.room-creator-table,#room-creator-table{width:100%}
+@media (max-width:760px){.rhythm-grid{grid-template-columns:1fr}.diagnostic-framework{padding:12px}#room-creator-table{font-size:12px}}
+.rhythm-card ul{list-style:disc}.rhythm-card li{margin-bottom:6px}.rhythm-output span{display:block;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:11px;letter-spacing:.08em;opacity:.7;margin-bottom:4px}.rhythm-chain{word-spacing:.3em}
